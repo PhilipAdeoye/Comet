@@ -1,0 +1,205 @@
+/* 
+    Created on : Jul 9, 2016, 3:26:55 PM
+    Author     : Philip
+*/
+
+/* Enables putting an asterisk after the label of a required field*/
+.form-group.required .control-label:after {
+    content:"*";
+    color:#e51c23;
+    position: absolute;
+    margin-left: 8px;
+}
+
+/* Styling for messages provided by form_error(). Makes them red */
+.field-validation-error {
+    color: #e51c23;
+}
+
+.modal-body {
+    overflow-y: auto;
+}
+
+/*Anchor elements like to be blue by default, but we don't want our headings to be blue.
+    Stock bootstrap solved this problem by putting the anchor tags inside the heading,
+    but since we like our headings inside the anchor tags, we need a workaround */
+.panel-heading a {
+    color: #444444;
+}
+/* Make the chevron glyphicons not be as dark as the heading their inside of */
+.panel-heading a span.glyphicon {
+    color: #777777;
+}
+
+span.glyphicon-remove {
+    color: #e51c23;
+}
+
+span.glyphicon-ok {
+    color: #4caf50;
+}
+
+/* For p elements used in xs and sm table replacements */ 
+p.listing {
+    margin: 0 0 0.5em;
+}
+
+/*To remove the unnecessary bottom margin on vertical lists of buttons in a list group*/
+.vertical-btn-list {
+    margin-bottom: 0px;
+}
+
+/*To economize the space used by a each button in a .vertical-btn-list*/
+.list-group-btn {
+    padding: 10px 15px;
+}
+
+/* Add a bit of left margin to stuff that follow a bit of text. */
+.left-gutter {
+    margin-left: 7px;
+}
+
+.right-gutter {
+    margin-right: 7px;
+}
+
+.file-input {
+    margin-top: 6px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/*Style a span so that it has a subtle grey background*/
+.role-description-highlight {
+    background-color: rgba(221, 221, 221, 0.3);
+    padding: 3px 5px;
+    border-radius: 4px;
+    
+}
+
+/*Style any element so that it has a subtle grey outline*/
+.solid-grey-outline {    
+    padding: 2px 5px;
+    border-radius: 4px;
+    border: solid rgba(221, 221, 221, 1) 1px;
+    display: inline-block;
+    line-height: normal;
+}
+
+/* Disable the transparency on toastr notifications */
+#toast-container > div {
+    opacity: 1;
+}
+/* Override the default toast-info blue with bootstrap-paper info purple */
+.toast-info {
+    background-color: #9c27b0;
+}
+
+/* Make the twitter typeahead width play nice when in a table*/
+table .twitter-typeahead {
+    width: inherit;
+}
+
+/* Override the min-width on twitter typeahead suggestions dropdown */
+.tt-dropdown-menu {
+    min-width: 0px;
+}
+
+/* Classes for datatables to disable sorting and searching on columns.*/
+.no-sort {
+}
+
+.no-search {
+}
+
+/*To ensure that datatables search inputs are only as wide as the column their searching */
+tfoot input[type='text'] {
+    width: 100%;
+    box-sizing: border-box;    
+    
+    /*To emphasize the input a little more*/
+    border-radius: 3px;
+    border: 1px solid #bbbbbb;
+    
+    /*To make the text look reasonable*/
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+/*So that the search boxes show up top instead of beneath the table*/
+tfoot{
+    display: table-header-group;
+}
+
+/* Override default dropdown appearance for bootstrap-multiselect selects */
+ul.multiselect-container.dropdown-menu li.active a {
+    background-color: transparent;
+    color:#666666;
+}
+
+/* The spinner */
+#uiActivityIndicator {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: none;
+    z-index: 999999;
+
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    border-left: 5px solid #e08600;
+    width: 30px;
+    height: 30px;
+    animation: ui-activity-indicator-spin 1s linear infinite;
+}
+
+@keyframes ui-activity-indicator-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Under 400px, the default padding (10px) on a col-xs-1 is just a wee bit too much 
+    and causes unwanted wrapping due to the width of the list-group in the same row */
+@media (max-width: 400px) {
+    .oppo-checkbox-container {
+        padding-left: 9px;
+    }
+}
+
+/*Prevent the fixed navbar from obstructing the content that immediately follows it*/
+body {
+    margin-top:87px;
+}
+
+/* Styles to make the sticky footer 
+    http://getbootstrap.com/examples/sticky-footer/ , 
+    http://getbootstrap.com/examples/sticky-footer/sticky-footer.css*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {    
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.footer .privacy-p {
+  margin: 20px 15px 0px 15px;
+}
+
+.footer .privacy-p a{
+  color: #bbbbbb;
+}
+/*End sticky footer styles*/

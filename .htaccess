@@ -1,0 +1,2 @@
+# Set environment variable
+SetEnv CI_ENV development
