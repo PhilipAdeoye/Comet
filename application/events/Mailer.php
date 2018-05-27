@@ -171,7 +171,7 @@ class Mailer {
      * Sends an arbitrary message to recipients
      * 
      * @param array $params An associative array. 
-     *      Keys. 1. sender: The name of the sender eg. VCP
+     *      Keys. 1. sender: The name of the sender eg. Comet
      *            2. emails: A comma-delimited string of email addresses
      *            3. subject: The message's subject
      *            4. message: The body of the message

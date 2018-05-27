@@ -1,5 +1,5 @@
 -- Scripts to bootstrap the system when creating a new clinic
--- Run this script after the creating the tables with vcp_db.sql
+-- Run this script after the creating the tables with comet_db.sql
 
 -- The essence of this script is to create the conditions necessary for the first user
 -- to register. 
